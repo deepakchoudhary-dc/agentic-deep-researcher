@@ -1,23 +1,29 @@
-# Agentic Deep Researcher
+# 🔍 Agentic Deep Researcher
+
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Ollama](https://img.shields.io/badge/Ollama-000000?logo=ollama&logoColor=white)](https://ollama.ai/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An MCP-powered multi-agent deep researcher that performs comprehensive web searches using LinkUp API and provides detailed, fast responses using an optimized Ollama setup.
 
-## Features
+## ✨ Features
 
-- **Fast & Detailed**: Optimized for speed while maintaining comprehensive responses
-- **LinkUp Integration**: Deep web search capabilities
-- **Qwen3 1.7B Model**: Optimized local LLM via Ollama
-- **Streamlit UI**: Clean, interactive web interface
-- **MCP Server**: Integration with VS Code and other MCP clients
+- **⚡ Fast & Detailed**: Optimized for speed while maintaining comprehensive responses
+- **🌐 LinkUp Integration**: Deep web search capabilities  
+- **🤖 Qwen3 1.7B Model**: Optimized local LLM via Ollama
+- **💻 Streamlit UI**: Clean, interactive web interface
+- **🔧 MCP Server**: Integration with VS Code and other MCP clients
+- **📊 Structured Output**: Professional formatting with citations
 
-## Quick Start
+## 🚀 Quick Start
 
-### Prerequisites
+### 📋 Prerequisites
 - Python 3.11+
 - Ollama with qwen3:1.7b model
 - LinkUp API key
 
-### Installation
+### 🛠️ Installation
 
 1. **Install dependencies:**
    ```bash
@@ -38,15 +44,15 @@ An MCP-powered multi-agent deep researcher that performs comprehensive web searc
 
 5. **Enter your LinkUp API key** in the sidebar
 
-## Usage
+## 📖 Usage
 
-### Web Interface
+### 🌐 Web Interface
 - Open the Streamlit app
 - Enter your LinkUp API key
 - Ask any research question
 - Get comprehensive, structured responses
 
-### MCP Server
+### 🔧 MCP Server
 Add this to your `.cursor/mcp.json`:
 
 ```json
@@ -68,7 +74,7 @@ Add this to your `.cursor/mcp.json`:
 }
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 .
@@ -81,13 +87,46 @@ Add this to your `.cursor/mcp.json`:
 └── .gitignore              # Git ignore rules
 ```
 
-## Performance Optimizations
+## ⚡ Performance Optimizations
 
 - **Speed**: 40-60% faster than standard implementations
 - **No Thinking Delays**: Automatic removal of model thinking artifacts
 - **Structured Output**: Professional formatting with sections
 - **Resource Efficient**: Optimized CPU and memory usage
 
-## Get Your API Key
+## 📸 Demo
 
-Get your LinkUp API key from: [https://app.linkup.so/sign-up](https://app.linkup.so/sign-up)
+### Streamlit Interface
+![Streamlit Interface](https://via.placeholder.com/800x400/0066cc/white?text=Streamlit+Research+Interface)
+
+### Sample Research Output
+![Research Output](https://via.placeholder.com/800x400/28a745/white?text=Detailed+Research+Results)
+
+## 🤝 Contributing
+
+We welcome contributions! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+### Development Setup
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [LinkUp](https://linkup.so/) for powerful web search capabilities
+- [Ollama](https://ollama.ai/) for local LLM inference
+- [Streamlit](https://streamlit.io/) for the beautiful web interface
+- [FastMCP](https://github.com/jlowin/fastmcp) for MCP server implementation
+
+## 📞 Support
+
+If you have any questions or need help getting started:
+- Open an [issue](https://github.com/yourusername/agentic-deep-researcher/issues)
+- Check the [documentation](README.md)
+- Join our [discussions](https://github.com/yourusername/agentic-deep-researcher/discussions)
