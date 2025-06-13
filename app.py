@@ -1,10 +1,6 @@
 import streamlit as st
+from optimized_research import optimized_research
 import os
-
-# Use cloud version for deployment compatibility
-from cloud_research import optimized_research_cloud as optimized_research
-USE_LOCAL = False
-st.sidebar.info("☁️ Running in cloud mode (search only)")
 
 # Set up page configuration
 st.set_page_config(page_title="🔍 Agentic Deep Researcher", layout="wide")
@@ -39,12 +35,6 @@ with st.sidebar:
         # Update the environment variable
         os.environ["LINKUP_API_KEY"] = linkup_api_key
         st.success("API Key stored successfully!")
-    
-    # Mode indicator
-    if USE_LOCAL:
-        st.info("🤖 Local Mode: Full AI analysis with Ollama")
-    else:
-        st.warning("☁️ Cloud Mode: Search results only (no local LLM)")
 
 # Main Chat Interface Header
 col1, col2 = st.columns([6, 1])
@@ -80,13 +70,9 @@ if prompt := st.chat_input("Ask a question for research..."):
     if not st.session_state.linkup_api_key:
         response = "Please enter your Linkup API Key in the sidebar."
     else:
-        if USE_LOCAL:
-            spinner_text = "🚀 Fast detailed research in progress..."
-        else:
-            spinner_text = "🔍 Searching web for information..."
-            
-        with st.spinner(spinner_text):
+        with st.spinner("🚀 Fast detailed research in progress..."):
             try:
+                # Use the optimized research method for best speed/detail balance
                 response = optimized_research(prompt)
                 
             except Exception as e:
