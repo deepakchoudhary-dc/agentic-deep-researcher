@@ -5,9 +5,17 @@ from typing import Type
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 from linkup import LinkupClient
-from crewai.tools import BaseTool
 
 load_dotenv()
+
+# Simple tool base class to replace CrewAI dependency
+class SimpleTool:
+    def __init__(self):
+        self.name = ""
+        self.description = ""
+    
+    def _run(self, query: str) -> str:
+        raise NotImplementedError("Tool must implement _run method")
 
 class OptimizedOllamaClient:
     """Optimized Ollama client for best speed/quality balance"""
@@ -57,9 +65,11 @@ class OptimizedOllamaClient:
         except Exception as e:
             return f"Generation error: {str(e)}"
 
-class OptimizedSearchTool(BaseTool):
-    name: str = "Optimized Search"
-    description: str = "Fast web search with LinkUp"
+class OptimizedSearchTool(SimpleTool):
+    def __init__(self):
+        super().__init__()
+        self.name = "Optimized Search"
+        self.description = "Fast web search with LinkUp"
     
     def _run(self, query: str) -> str:
         try:
