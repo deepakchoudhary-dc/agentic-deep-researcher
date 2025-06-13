@@ -4,7 +4,7 @@ from typing import Type
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 from linkup import LinkupClient
-
+from crewai.tools import BaseTool
 
 load_dotenv()
 
@@ -56,7 +56,7 @@ class OptimizedOllamaClient:
         except Exception as e:
             return f"Generation error: {str(e)}"
 
-class OptimizedSearchTool(Tools):
+class OptimizedSearchTool(BaseTool):
     name: str = "Optimized Search"
     description: str = "Fast web search with LinkUp"
     
