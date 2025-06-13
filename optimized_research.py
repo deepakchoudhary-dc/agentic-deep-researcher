@@ -56,7 +56,7 @@ class OptimizedOllamaClient:
         except Exception as e:
             return f"Generation error: {str(e)}"
 
-class OptimizedSearchTool(BaseTool):
+class OptimizedSearchTool(Tools):
     name: str = "Optimized Search"
     description: str = "Fast web search with LinkUp"
     
