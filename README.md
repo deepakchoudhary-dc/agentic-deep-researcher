@@ -7,6 +7,7 @@
 
 An MCP-powered multi-agent deep researcher that performs comprehensive web searches using LinkUp API and provides detailed, fast responses using an optimized Ollama setup.
 
+YOU NEED TO HAVE OLLAMA INSTALLED ON YOUR LOCAL MACHINE TO MAKE IT WORK.
 ## ✨ Features
 
 - **⚡ Fast & Detailed**: Optimized for speed while maintaining comprehensive responses
