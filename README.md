@@ -97,10 +97,9 @@ Add this to your `.cursor/mcp.json`:
 ## 📸 Demo
 
 ### Streamlit Interface
-![Streamlit Interface](https://via.placeholder.com/800x400/0066cc/white?text=Streamlit+Research+Interface)
+![image](https://github.com/user-attachments/assets/108c065a-dcda-4a0c-baf9-b43506b42f1a)
 
-### Sample Research Output
-![Research Output](https://via.placeholder.com/800x400/28a745/white?text=Detailed+Research+Results)
+
 
 ## 🤝 Contributing
 
