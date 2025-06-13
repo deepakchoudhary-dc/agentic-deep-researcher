@@ -11,11 +11,3 @@ dependencies = [
     "requests>=2.31.0",
     "pydantic>=2.0.0",
 ]
-
-[project.optional-dependencies]
-local = [
-    "crewai>=0.114.0",
-    "mcp>=1.6.0",
-    "openai>=1.75.0",
-    "streamlit-crewai-process-output>=0.1.1",
-]
